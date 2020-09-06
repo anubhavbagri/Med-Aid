@@ -171,50 +171,53 @@
                         <h3 class="text-3xl mb-2 font-semibold leading-normal">
                             Donate your medicines.
                         </h3>
-                        <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full
-                                Name</label><input type="text"
-                                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                placeholder="Your Name" style="transition: all 0.15s ease 0s;" />
-                        </p>
-                        <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                for="email">Email</label><input type="email"
-                                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                placeholder="Your email address" style="transition: all 0.15s ease 0s;" />
-                        </p>
-                        <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Contact
-                                Number</label><input type="number"
-                                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                placeholder="Your phone number" style="transition: all 0.15s ease 0s;" />
-                        </p>
-                        <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                for="email">Locality</label><input type="text"
-                                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                placeholder="Your locality name" style="transition: all 0.15s ease 0s;" />
-                        </p>
-                        <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
-                                Name</label><input type="text"
-                                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                placeholder="Name of the medicines you want to donate"
-                                style="transition: all 0.15s ease 0s;" />
-                        </p>
-                        <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                            <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
-                                Description</label><input type="text"
-                                class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                placeholder="Quantity and unit of medicines" style="transition: all 0.15s ease 0s;" />
-                        </p>
-                        <div class="text-center mt-6 inline-flex mb-6">
-                            <button
-                                class="bg-gray-800 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                                type="button" style="transition: all 0.15s ease 0s;">
-                                Submit
-                            </button>
-                        </div>
+                        <form id="donateform">
+                            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full
+                                    Name</label><input type="text" id="name"
+                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                    placeholder="Your Name" style="transition: all 0.15s ease 0s;" />
+                            </p>
+                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                    for="email">Email</label><input type="email" id="email"
+                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                    placeholder="Your email address" style="transition: all 0.15s ease 0s;" />
+                            </p>
+                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Contact
+                                    Number</label><input type="number" id="phone"
+                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                    placeholder="Your phone number" style="transition: all 0.15s ease 0s;" />
+                            </p>
+                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                    for="email">Locality</label><input type="text" id="locality"
+                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                    placeholder="Your locality name" style="transition: all 0.15s ease 0s;" />
+                            </p>
+                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
+                                    Name</label><input type="text" id="medname"
+                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                    placeholder="Name of the medicines you want to donate"
+                                    style="transition: all 0.15s ease 0s;" />
+                            </p>
+                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
+                                    Description</label><input type="text" id="meddesc"
+                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                    placeholder="Quantity and unit of medicines"
+                                    style="transition: all 0.15s ease 0s;" />
+                            </p>
+                            <div class="text-center mt-6 inline-flex mb-6">
+                                <button onclick="insert();"
+                                    class="bg-gray-800 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                    type="button" style="transition: all 0.15s ease 0s;">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
                     </div>
                     <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
                         <div
@@ -299,51 +302,58 @@
                                     </div>
                                 </li>
                             </ul>
-                            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                    for="full-name">Business
-                                    Name</label><input type="text"
-                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 rounded text-sm shadow border appearance-none focus:outline-none focus:shadow-outline w-full"
-                                    placeholder="Name of your place of work" style="transition: all 0.15s ease 0s;" />
-                            </p>
-                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">License
-                                    ID</label><input type="text"
-                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                    placeholder="Your Business License" style="transition: all 0.15s ease 0s;" />
-                            </p>
-                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Contact
-                                    Details</label><input type="text"
-                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                    placeholder="Your Email/Phone number" style="transition: all 0.15s ease 0s;" />
-                            </p>
-                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                    for="email">Locality</label><input type="text"
-                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                    placeholder="Your Locality Name" style="transition: all 0.15s ease 0s;" />
-                            </p>
-                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
-                                    Name</label><input type="text"
-                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                    placeholder="Name of the medicine" style="transition: all 0.15s ease 0s;" />
-                            </p>
-                            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
-                                    Description & Price</label><input type="text"
-                                    class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                    placeholder="Quantity and unit of medicines along with price"
-                                    style="transition: all 0.15s ease 0s;" />
-                            </p>
-                            <div class="text-center mt-6 inline-flex mb-6">
-                                <button
-                                    class="bg-gray-800 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                                    type="button" style="transition: all 0.15s ease 0s;">
-                                    Submit
-                                </button>
-                            </div>
+                            <form class="seller-form">
+                                <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                        for="full-name">Business
+                                        Name</label><input type="text" id="bname"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 rounded text-sm shadow border appearance-none focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Name of your place of work"
+                                        style="transition: all 0.15s ease 0s;" />
+                                </p>
+                                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                        for="email">License
+                                        ID</label><input type="text" id="license"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Your Business License" style="transition: all 0.15s ease 0s;" />
+                                </p>
+                                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                        for="email">Contact
+                                        Details</label><input type="text" id="contact"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Your Email/Phone number" style="transition: all 0.15s ease 0s;" />
+                                </p>
+                                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                        for="email">Locality</label><input type="text" id="blocality"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Your Locality Name" style="transition: all 0.15s ease 0s;" />
+                                </p>
+                                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                        for="email">Medicine
+                                        Name</label><input type="text" id="bmedname"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Name of the medicine" style="transition: all 0.15s ease 0s;" />
+                                </p>
+                                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                        for="email">Medicine
+                                        Description & Price</label><input type="text" id="bmedprice"
+                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                        placeholder="Quantity and unit of medicines along with price"
+                                        style="transition: all 0.15s ease 0s;" />
+                                </p>
+                                <div class="text-center mt-6 inline-flex mb-6">
+                                    <button
+                                        class="bg-gray-800 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                        type="submit" style="transition: all 0.15s ease 0s;">
+                                        Submit
+                                    </button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -447,31 +457,33 @@
                             <div class="flex-auto p-5 lg:p-10">
                                 <h4 class="text-2xl font-semibold"> Complete this form and we will get back to you in 24
                                     hours.</h4>
-                                <div class="relative w-full mb-3 mt-8">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                        for="full-name">Full Name</label><input type="text"
-                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                        placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
-                                </div>
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                        for="email">Email</label><input type="email"
-                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                        placeholder="Email" style="transition: all 0.15s ease 0s;" />
-                                </div>
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                                        for="message">Message</label><textarea rows="4" cols="80"
-                                        class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                                        placeholder="Type a message..." style="resize: none"></textarea>
-                                </div>
-                                <div class="text-center mt-6">
-                                    <button
-                                        class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                                        type="button" style="transition: all 0.15s ease 0s;">
-                                        Send Message
-                                    </button>
-                                </div>
+                                <form class="contact-form">
+                                    <div class="relative w-full mb-3 mt-8">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                            for="full-name">Full Name</label><input type="text" id="fullname"
+                                            class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+                                    </div>
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                            for="email">Email</label><input type="email" id="emailid"
+                                            class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Email" style="transition: all 0.15s ease 0s;" />
+                                    </div>
+                                    <div class="relative w-full mb-3">
+                                        <label class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                                            for="message">Message</label><textarea rows="4" cols="80" id="message"
+                                            class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                                            placeholder="Type a message..." style="resize: none"></textarea>
+                                    </div>
+                                    <div class="text-center mt-6">
+                                        <button
+                                            class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                            type="submit" style="transition: all 0.15s ease 0s;">
+                                            Send Message
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -532,6 +544,29 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD5t7BJc3TTij2Qk51iFAKRAMWk6jBWi9k",
+            authDomain: "the-med-aid.firebaseapp.com",
+            databaseURL: "https://the-med-aid.firebaseio.com",
+            projectId: "the-med-aid",
+            storageBucket: "the-med-aid.appspot.com",
+            messagingSenderId: "639992295722",
+            appId: "1:639992295722:web:deff5079a3cfa56aeaae53"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/donate.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+    <script src="js/sell.js" type="text/javascript"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase.js"></script>
+    <script src="js/contact.js" type="text/javascript"></script>
 </body>
 <script>
     function toggleNavbar(collapseID) {
