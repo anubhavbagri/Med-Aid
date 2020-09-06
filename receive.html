@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link rel="icon" sizes="76x76" href="./assets/img/logo.png" />
+    <link rel="stylesheet" href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <title>Med-aid</title>
+</head>
+
+<body class="text-gray-800 antialiased">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+            <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+                    href="index.html">Home</a><button
+                    class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                    <i class="text-white fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+                id="example-collapse-navbar">
+                <ul class="flex flex-col lg:flex-row list-none mr-auto">
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="/index.html"><i
+                                class="lg:text-gray-300 text-gray-500 far fa-address-card text-lg leading-lg mr-2"></i>
+                            About us</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="/receive.html"><i
+                                class="lg:text-gray-300 text-gray-500 fas fa-capsules text-lg leading-lg "></i><span
+                                class="inline-block ml-2">Receive Medicines</span></a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="/index.html"><i
+                                class="lg:text-gray-300 text-gray-500 fas fa-prescription-bottle-alt text-lg leading-lg "></i><span
+                                class="inline-block ml-2">Donate</span></a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="/buy.html"><i
+                                class="lg:text-gray-300 text-gray-500 fas fa-shopping-cart text-lg leading-lg "></i><span
+                                class="inline-block ml-2">Buy</span></a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="/index.html"><i
+                                class="lg:text-gray-300 text-gray-500 fas fa-coins text-lg leading-lg "></i><span
+                                class="inline-block ml-2">Sell</span></a>
+                    </li>
+                    <li class="flex items-center">
+                        <button
+                            class="bg-white text-gray-800 active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+                            type="button" style="transition: all 0.15s ease 0s;">
+                            <i class="fas fa-arrow-alt-circle-right"></i> Watch Video
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("https://images.unsplash.com/photo-1588776049188-b27693b3f966?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+            </div>
+            <div class="container relative mx-auto">
+                <div class="items-center flex flex-wrap">
+                    <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+                        <div class="pr-12">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-6/12 sm:w-4/12 px-4">
+                                    <img src="./assets/img/medaid.jpg" alt="medaid logo"
+                                        class="shadow rounded-full max-w-full h-auto align-middle border-none" />
+                                </div>
+                            </div>
+                            <h1 class="text-white font-bold text-5xl">
+                                Receive Medicines
+                            </h1>
+                            <p class="mt-4 text-lg text-gray-300">
+                                Please enter the name and quantity of the medicine you require.
+                                You will also be required to upload a prescription from a licensed doctor.
+                                We are doing this to keep everything genuine. Hope you understand! Your details will not be shared anywhere else!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </div>
+
+
+        <div class="flex flex-wrap items-center mt-32" id="donate">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+                <div
+                    class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
+                    <i class="fas fa-prescription-bottle-alt text-xl"></i>
+                </div>
+                <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full
+                        Name</label><input type="text"
+                        class="px-3 py-3 placeholder-gray-400 text-gray-700 rounded border appearance-none text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                        placeholder="Your Name" style="transition: all 0.15s ease 0s;" />
+                </p>
+                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
+                        Name</label><input type="text"
+                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                        placeholder="Name of the medicines you want to donate"
+                        style="transition: all 0.15s ease 0s;" />
+                </p>
+                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
+                        Description</label><input type="text"
+                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                        placeholder="Quantity and unit of medicines" style="transition: all 0.15s ease 0s;" />
+                </p>
+                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Upload
+                        Prescription</label>
+                        <label class="w-64 flex flex-col items-center px-4 py-6 border appearance-none text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
+                            <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                            </svg>
+                            <span class="mt-2 text-base leading-normal">Select a file</span>
+                            <input type='file' class="hidden" />
+                        </label>
+                </p>
+                <div class="text-center mt-6 inline-flex mb-6">
+                    <button onclick="window.open('/receive2.html','_self')"
+                        class="bg-gray-800 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        type="button" style="transition: all 0.15s ease 0s;">
+                        Submit
+                    </button>
+                </div>
+            </div>
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+                    <img alt="..."
+                        src="https://images.unsplash.com/photo-1588778117702-f92209c7e797?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                        class="w-full align-middle rounded-t-lg" />
+                    <blockquote class="relative p-8 mb-4">
+                        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                            class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                            <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
+                        </svg>
+                        <h4 class="text-xl font-bold text-white">
+                            Receiving Medicines
+                        </h4>
+                        <p class="text-md font-light mt-2 text-white">
+                            We try to maintain genuinity while giving out donated medicines. We hope 
+                            you respect the sanctity of our effort and ask for what is required. We ask for 
+                            an image of the prescribed medications to verify your requests. We mean well. 
+                        </p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+        
+
+    <footer class="relative bg-gray-300 pt-8 pb-6">
+        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+            style="height: 80px; transform: translateZ(0px);">
+            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 px-4">
+                    <h4 class="text-3xl font-semibold">Let's keep in touch!</h4>
+                    <h5 class="text-lg mt-0 mb-2 text-gray-700">
+                        Find us on any of these platforms.
+                    </h5>
+                    <div class="mt-6">
+                        <button
+                            class="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                            type="button">
+                            <i class="flex fab fa-twitter"></i></button><button
+                            class="bg-white text-blue-500 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                            type="button">
+                            <i class="flex fab fa-facebook-square"></i></button><button
+                            class="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                            type="button">
+                            <i class="flex fab fa-linkedin-in"></i></button><button
+                            onclick="window.open('https://github.com/aiqqia/Med-Aid','_blank')"
+                            class="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                            type="button">
+                            <i class="flex fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 px-4">
+                    <div class="flex flex-wrap items-top mb-6">
+                        <div class="w-full lg:w-4/12 px-4 ml-auto">
+                        </div>
+                        <!-- <div class="w-full lg:w-4/12 px-4">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-400" />
+            <div class="flex flex-wrap items-center md:justify-between justify-center">
+                <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+                    <div class="text-sm text-gray-600 font-semibold py-1">
+                        Copyright © 2020 Med-Aid -
+                        <a class="text-gray-700 hover:text-gray-900">@med-aid</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+</script>
+
+</html>
