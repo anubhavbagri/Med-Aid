@@ -55,7 +55,7 @@
                     </li>
                     <li class="flex items-center">
                         <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                            href="/index.html"><i
+                            href="index.html"><i
                                 class="lg:text-gray-300 text-gray-500 fas fa-coins text-lg leading-lg "></i><span
                                 class="inline-block ml-2">Sell</span></a>
                     </li>
@@ -73,7 +73,7 @@
     <main>
         <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
             <div class="absolute top-0 w-full h-full bg-center bg-cover"
-                style='background-image: url("https://images.unsplash.com/photo-1588776049188-b27693b3f966?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80");'>
+                style='background-image: url("https://images.unsplash.com/photo-1528272252360-5efd274e36fb?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80");'>
                 <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
             </div>
             <div class="container relative mx-auto">
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                             <h1 class="text-white font-bold text-5xl">
-                                Receive Medicines
+                                Buy Medicines
                             </h1>
                             <p class="mt-4 text-lg text-gray-300">
                                 Please enter the name and quantity of the medicine you require.
@@ -108,77 +108,84 @@
         </div>
 
 
-        <div class="flex flex-wrap items-center mt-32" id="donate">
+        <!-- <div class="text-white px-6 py-4 border-0 rounded relative mb-4 bg-pink-500">
+            <span class="text-xl inline-block mr-5 align-middle">
+              <i class="fas fa-bell" />
+            </span>
+            <span class="inline-block align-middle mr-8">
+              <b class="capitalize">pink!</b> This is a pink alert - check it out!
+            </span>
+            <button class="absolute bg-transparent text-2xl font-semibold leading-none right-0 top-0 mt-4 mr-6 outline-none focus:outline-none">
+              <span>×</span>
+            </button>
+          </div>  -->
+
+          <div class="flex flex-wrap items-center mt-32" id="donate">
             <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
-                <div
-                    class="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-                    <i class="fas fa-prescription-bottle-alt text-xl"></i>
-                </div>
-                <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">Full
-                        Name</label><input type="text"
-                        class="px-3 py-3 placeholder-gray-400 text-gray-700 rounded border appearance-none text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                        placeholder="Your Name" style="transition: all 0.15s ease 0s;" />
-                </p>
-                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
-                        Name</label><input type="text"
-                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                        placeholder="Name of the medicines you want to donate"
-                        style="transition: all 0.15s ease 0s;" />
-                </p>
-                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Medicine
-                        Description</label><input type="text"
-                        class="px-3 py-3 placeholder-gray-400 text-gray-700 border appearance-none rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
-                        placeholder="Quantity and unit of medicines" style="transition: all 0.15s ease 0s;" />
-                </p>
-                <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-                    <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">Upload
-                        Prescription</label>
-                        <label class="w-64 flex flex-col items-center px-4 py-6 border appearance-none text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
-                            <svg class="w-8 h-8" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
-                            </svg>
-                            <span class="mt-2 text-base leading-normal">Select a file</span>
-                            <input type='file' class="hidden" />
-                        </label>
-                </p>
-                <div class="text-center mt-6 inline-flex mb-6">
-                    <button onclick="window.open('/receive2.html','_self')"
-                        class="bg-gray-800 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
-                        type="button" style="transition: all 0.15s ease 0s;">
-                        Submit
-                    </button>
-                </div>
-            </div>
-            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-                <div
-                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-                    <img alt="..."
-                        src="https://images.unsplash.com/photo-1588778117702-f92209c7e797?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
-                        class="w-full align-middle rounded-t-lg" />
-                    <blockquote class="relative p-8 mb-4">
-                        <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
-                            class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
-                            <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
-                        </svg>
-                        <h4 class="text-xl font-bold text-white">
-                            Receiving Medicines
-                        </h4>
-                        <p class="text-md font-light mt-2 text-white">
-                            We try to maintain genuinity while giving out donated medicines. We hope 
-                            you respect the sanctity of our effort and ask for what is required. We ask for 
-                            an image of the prescribed medications to verify your requests. We mean well. 
-                        </p>
-                    </blockquote>
-                </div>
+        <table class="table-auto">
+            <thead>
+              <tr>
+                <th class="px-4 py-2">Name of medicines avaiable</th>
+                <th class="px-4 py-2">Quantity Available</th>
+                <th class="px-4 py-2">Price</th>
+                <th class="px-4 py-2">Name of Person</th>
+                <th class="px-4 py-2">Contact Number</th>
+                <th class="px-4 py-2">Locality</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-4 py-2">Moxclav625</td>
+                <td class="border px-4 py-2">10 pill * 5 strips</td>
+                <td class="border px-4 py-2">Rs. 50/ strip</td>
+                <td class="border px-4 py-2">XYZ</td>
+                <td class="border px-4 py-2">1234</td>
+                <td class="border px-4 py-2">Kolkata</td>
+              </tr>
+              <tr class="bg-gray-200">
+                <td class="border px-4 py-2">Paracematol</td>
+                <td class="border px-4 py-2">5 pills * 10 strips</td>
+                <td class="border px-4 py-2">Rs. 20/ strip</td>
+                <td class="border px-4 py-2">XYZ</td>
+                <td class="border px-4 py-2">1234</td>
+                <td class="border px-4 py-2">Kolkata</td>
+              </tr>
+              <tr>
+                <td class="border px-4 py-2">Clavam</td>
+                <td class="border px-4 py-2">10 pills * 10 boxes</td>
+                <td class="border px-4 py-2">Rs. 100/ box</td>
+                <td class="border px-4 py-2">XYZ</td>
+                <td class="border px-4 py-2">1234</td>
+                <td class="border px-4 py-2">Kolkata</td>
+              </tr>
+              <tr class="bg-gray-200">
+                <td class="border px-4 py-2">Paracematol</td>
+                <td class="border px-4 py-2">5 pills * 10 strips</td>
+                <td class="border px-4 py-2">Rs. 20/ strip</td>
+                <td class="border px-4 py-2">XYZ</td>
+                <td class="border px-4 py-2">1234</td>
+                <td class="border px-4 py-2">Kolkata</td>
+              </tr>
+              <tr>
+                <td class="border px-4 py-2">Clavam</td>
+                <td class="border px-4 py-2">10 pills * 10 boxes</td>
+                <td class="border px-4 py-2">Rs. 100/ box</td>
+                <td class="border px-4 py-2">XYZ</td>
+                <td class="border px-4 py-2">1234</td>
+                <td class="border px-4 py-2">Kolkata</td>
+              </tr>
+            </tbody>
+          </table>
             </div>
         </div>
+    
     </main>
-
-
+          <div class="flex flex-wrap items-center mt-32" id="donate">
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto">
+            </div>
+        </div>
         
+
 
     <footer class="relative bg-gray-300 pt-8 pb-6">
         <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
