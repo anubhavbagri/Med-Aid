@@ -13,7 +13,6 @@
 ### Contents
 
 * [About](#about)
-* [Features](#features)
 * [Challenges we ran into](#Challenges-we-ran-into)
 * [Video Explanation](https://youtu.be/f1ZwlCLvU68)
 * [Built Using](#built-using)
@@ -30,10 +29,16 @@ _https://med-aid.xyz_
 During these testing times of the coronavirus pandemic, we all prefer to stay home as much as possible. But, sometimes we have to get some essentials for our family and loved ones. Sometimes we need to get out of our houses and go for a walk. We need to meet friends and go for work. Crowded markets and malls are more prone to spreading the virus and everyone is worried about it. Well, worry no more! We bring to you The Mass Tracker where you can view the crowd status of places around you in real time and decide for yourself which is safest place for you to travel.
 
 ![Donate Image](assets/img/donateimage.png)
----
+
+**Verified Pharmacists** - All the pharmacists that sell or donate medicines using this platform are verified and have a license to sell medicines to ensure safety and legality of the transactions.
+
 ![Sell Image](assets/img/sellimage.png)
----
+
+**Trusted Donors & Receivers** - Any person who is willing to give can donate medicines but medicines are accepted only after thorough checking and quality ensurance. People receiving will have to upload prescriptions to verify their needs.
+
 ![Receive Image](assets/img/receiveimage.png)
+
+**Non-Profit Platform** - We do not take ask for any intermediate costs to make the transfer. This is because we want to help people who are in need of medication and cannot afford it.
 
 ## Challenges we ran into
 
