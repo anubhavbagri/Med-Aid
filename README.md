@@ -31,7 +31,10 @@ _https://med-aid.xyz_
 ## Our Journey and Problems - First virtual Hackathon as amateurs
 
 ![Donate Image](assets/img/donateimage.png)
+---
 ![Sell Image](assets/img/sellimage.png)
+---
+![Receive Image](assets/img/receiveimage.png)
 
 The project we have built together was a rollercoaster ride. After we got the team together, we brainstormed an idea. It was very unclear and we had to bring together what each side had to offer. After hours of discussion when we started to build our project it was not easy to decide the framework we were going to make the website in. It was mutually decided that we go with tailwindcss. It turned out to be a good decision. When we finally looked into the details, there was a lot of confusion as to how we were going to take credible data input from users and create a backend for the website in such a short time. We decided to embed forms into our website eventually so that we can take all required data and structure it to our benfit.
 
@@ -40,14 +43,12 @@ We then faced a problem with how we were to create a user friendly viewing syste
 ## Built Using
 
 - **HTML5, Tailwind CSS** : Website styling done with tailwind css.
-- **Mapbox GL JS** : API used to show areas on the map.
-- **Google Forms** : To collect data since we didn't find any such quick alternative.
-- **Firebase** : To store contact form data.
+- **Javascript** : Sending data to firebase through javascript.
+- **Firebase** : To store data of all the forms used in our website.
 - **Adobe Illustrator** : To design the project logo.
 
 ## Acknowledgements
 
 * [Unsplash](https://source.unsplash.com/)
-* [Tailblocks](https://mertjf.github.io/tailblocks/)
-* [Flaticon](https://www.flaticon.com/)
-* [Imgur](https://imgur.com/)
+* [Creative Tim](https://www.creative-tim.com/blog/web-development/free-tailwind-css-templates-resources/)
+* [Fontawesome](https://fontawesome.com/)
